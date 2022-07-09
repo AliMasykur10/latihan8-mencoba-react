@@ -1,20 +1,13 @@
-import logo from "./logo.svg";
+import { render } from "@testing-library/react";
 import "./App.css";
+import TodoHeader from "./components/todoheader/todoHeader";
 
-function App() {
+const App = () => {
   return (
-    <h1>mencoba react pada h1</h1>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>aku sedang mencoba membuat sebuah paragraph di ract js</p>
-
-    //     <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+    <div className="app">
+      <TodoHeader />
+    </div>
   );
-}
+};
 
 export default App;
